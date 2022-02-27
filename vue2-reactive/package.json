@@ -1,0 +1,27 @@
+{
+  "name": "vue-class-style",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dist": "webpack"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.2",
+    "css-loader": "^4",
+    "postcss": "^8.4.7",
+    "postcss-loader": "^4",
+    "sass": "^1.49.9",
+    "sass-loader": "^10.1.1",
+    "style-loader": "^2",
+    "webpack": "^4",
+    "webpack-cli": "3.3.11",
+    "webpack-dev-server": "3.11.2"
+  },
+  "dependencies": {
+    "html-webpack-plugin": "^4.5.0"
+  }
+}

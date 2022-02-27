@@ -1,0 +1,8 @@
+#app {
+  color: red;
+  background-color: green($color: #000000);
+  .container {
+    width: 200px;
+    color: 'red'
+  }
+}
