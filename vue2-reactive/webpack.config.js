@@ -12,6 +12,10 @@ module.exports = {
     path: resolve(__dirname, 'dist'),
     filename: 'bundle.js'
   },
+  resolve: {
+    // 定义模块查找路径
+    modules: [resolve(__dirname, ''), resolve(__dirname, 'node_modules')]
+  },
   module: {
     rules: [
       {
