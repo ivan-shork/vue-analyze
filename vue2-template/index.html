@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="app" @click="test" style="color: red;font-size: 20px;">
+    <div class="container">
+      <h2>{{ title }}哈哈哈</h2>
+      <div class="info" style="color: green;">
+        <p>姓名： {{ name }}</p>
+        <p>年龄： {{ age }}</p>
+      </div>
+    </div>
+  </div>
+  <script src="./dist/umd/vue.js"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script> -->
+  <script>
+    let vm =new Vue({
+      props: {
+        type: String
+      },
+      data() {
+        return {
+          title: 'aven最帅',
+          name: 'aven',
+          age: 12
+        }
+      },
+      methods: {
+        test() {
+
+        }
+      }
+    }).$mount("#app")
+    console.log(vm);
+    
+  </script>
+</body>
+</html>
